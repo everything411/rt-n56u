@@ -348,7 +348,7 @@ get_eeprom_params(void)
 	}
 #endif
 #endif
-
+/*
 	{
 		int i, count_0xff = 0;
 		unsigned char txbf_para[33];
@@ -365,6 +365,8 @@ get_eeprom_params(void)
 		
 		nvram_wlan_set_int(1, "txbf_en", (count_0xff == 33) ? 0 : 1);
 	}
+*/
+	nvram_wlan_set_int(1, "txbf_en", 1);
 
 }
 

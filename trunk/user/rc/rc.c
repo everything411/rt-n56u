@@ -117,7 +117,7 @@ load_wireless_modules(void)
 #endif
 
 #if defined (USE_MT7615_AP)
-	module_smart_load("mt_7615e", NULL);
+	module_smart_load("mt7615_ap", NULL);
 #endif
 
 #if defined (USE_MT7915_AP)
